@@ -15,15 +15,9 @@ Note that any issues should be reported to [vshaxe](https://github.com/vshaxe/vs
 
 ### Building From Source
 
-The easiest way to work on the language server is probably to build it as part of the vshaxe VSCode extension as instructed [here](https://github.com/vshaxe/vshaxe/wiki/Installation#from-source) (even if you ultimately want to use it outside of VSCode), which allows for easy debugging.
-
-However, you can also build it as a standalone project like so:
-
 ```
-git clone https://github.com/vshaxe/haxe-language-server
-cd haxe-language-server
-npm ci
-npx lix run vshaxe-build -t language-server
+./install.ps1
+haxe ./build.hxml
 ```
 
 This creates a `bin/server.js` that can be started with `node server.js`.
